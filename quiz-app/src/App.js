@@ -1,18 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import QuizPage from './pages/QuizPage';
-import LeaderboardPage from './pages/LeaderboardPage';
+import logo from './logo.svg';
+import './App.css';
+import { AllRoutes } from './components/allRoutes';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/quiz" component={QuizPage} />
-        <Route path="/leaderboard" component={LeaderboardPage} />
-      </Switch>
-    </Router>
+    <div className="App">
+      <AllRoutes/>
+    </div>
   );
 }
 
